@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+		<title>:: Welcome to D6Software :: Under Construction!</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--neon-yellow: #ffff00;
+		--neon-magenta: #ff00ff;
+		--neon-cyan: #00ffff;
+		--neon-green: #00ff00;
+		--retro-black: #080808;
+		--retro-grey: #333333;
+	}
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: var(--retro-black);
+		color: #e0e0e0;
+		font-family:
+			"Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive, sans-serif;
+		min-height: 100vh;
+		overflow-x: hidden;
+	}
+
+	/* Retro Windows-style scrollbar */
+	::-webkit-scrollbar {
+		width: 16px;
+	}
+	::-webkit-scrollbar-track {
+		background: #c0c0c0;
+		border-left: 2px inset #ffffff;
+	}
+	::-webkit-scrollbar-thumb {
+		background: #808080;
+		border: 2px outset #ffffff;
+	}
+
+	/* Classic link styles */
+	a {
+		color: var(--neon-cyan);
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	a:hover {
+		color: var(--neon-magenta);
+		background-color: #ffffff;
+		text-decoration: none;
+	}
+</style>
